@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/menu-pdf-tdo/static/css/main.014f4c13.chunk.css",
+    "main.js": "/menu-pdf-tdo/static/js/main.97dc33f1.chunk.js",
+    "main.js.map": "/menu-pdf-tdo/static/js/main.97dc33f1.chunk.js.map",
+    "runtime-main.js": "/menu-pdf-tdo/static/js/runtime-main.b1a35098.js",
+    "runtime-main.js.map": "/menu-pdf-tdo/static/js/runtime-main.b1a35098.js.map",
+    "static/js/2.757142e1.chunk.js": "/menu-pdf-tdo/static/js/2.757142e1.chunk.js",
+    "static/js/2.757142e1.chunk.js.map": "/menu-pdf-tdo/static/js/2.757142e1.chunk.js.map",
+    "index.html": "/menu-pdf-tdo/index.html",
+    "static/css/main.014f4c13.chunk.css.map": "/menu-pdf-tdo/static/css/main.014f4c13.chunk.css.map",
+    "static/js/2.757142e1.chunk.js.LICENSE.txt": "/menu-pdf-tdo/static/js/2.757142e1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1a35098.js",
+    "static/js/2.757142e1.chunk.js",
+    "static/css/main.014f4c13.chunk.css",
+    "static/js/main.97dc33f1.chunk.js"
+  ]
+}
