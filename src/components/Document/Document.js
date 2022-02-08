@@ -1,19 +1,6 @@
-import {
-  Document,
-  Link,
-  Page,
-  StyleSheet,
-  Text,
-  View,
-} from "@react-pdf/renderer";
+import { Document, Page, StyleSheet, Text, View } from "@react-pdf/renderer";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import {
-  AppContainer,
-  NavContainer,
-  ProductsContainer,
-  ProductTitleContainer,
-} from "./document.style";
 const fetchEndpoints = async (endpoint) => {
   return await axios({
     method: "GET",
@@ -58,49 +45,52 @@ const PdFDocument = ({ setLoading }) => {
     PageContent: {
       display: "flex",
       flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
       width: "100%",
+      color: "white",
+    },
+    LinkContainer: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
     },
     ProductsContainer: {
       width: "100%",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
+      textAlign: "left",
       margin: "12px",
     },
     ProductsContainerH1: {
       textDecoration: "underline",
-      fontSize: "30px",
+      fontSize: "24px",
+      textTransform: "uppercase",
+      textAlign: "center",
     },
     ProductTitleContainer: {
       display: "flex",
-      justifyContent: "space-around",
+      flexDirection: "row",
+      justifyContent: "space-between",
       alignItems: "center",
-      margin: "auto",
-      textAlign: "center",
     },
     ProductTitleContainerH2: {
-      marginBottom: "8px",
-      textAlign: "center",
-      fontSize: "24px",
+      textAlign: "left",
+      fontSize: "20px",
+      textTransform: "uppercase",
     },
 
     ProductTitleContainerH3: {
-      fontSize: "24px",
-      textAlign: "center",
+      fontSize: "20px",
+      textAlign: "right",
+      marginRight: "40px",
     },
     ProductContent: {
-      margin: "auto",
-      fontSize: "18px",
+      fontSize: "15px",
       width: "80%",
-      textAlign: "center",
-      padding: "8px",
+      textAlign: "left",
+      padding: "8px 0px",
     },
   });
   return (
     <Document>
-      <Page>
+      <Page style={{ backgroundColor: "#656439" }}>
         <View style={styles.PageContent}>
           {types.map((type, index) => (
             <View key={index} id={type} style={styles.ProductsContainer}>

@@ -1,10 +1,11 @@
+import { PDFViewer } from "@react-pdf/renderer";
 import React, { useState } from "react";
 import PdfDocucment from "../Document/Document";
 import { PDFDownloadLinkStyled } from "./app.style";
 const App = () => {
   const [loading, setLoading] = useState(false);
   return (
-    <div>
+    <div style={{ height: "100vh" }}>
       <PDFDownloadLinkStyled
         disabled={loading}
         document={<PdfDocucment setLoading={setLoading} />}
@@ -12,6 +13,9 @@ const App = () => {
       >
         {loading ? "Loading" : "Telecharger"}
       </PDFDownloadLinkStyled>
+      <PDFViewer width="100%" height="100%">
+        <PdfDocucment setLoading={setLoading} />
+      </PDFViewer>
     </div>
   );
 };
